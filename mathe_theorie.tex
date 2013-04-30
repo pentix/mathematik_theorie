@@ -10,6 +10,7 @@
 \title{Mathematik 1. Kantonsschule}
 \begin{document}
 
+
 \maketitle
 \tableofcontents
 
@@ -21,7 +22,72 @@
 \chapter{Strahlensätze und Ähnlichkeit}
 
 
-\chapter{Lineare Funktionen}
+\chapter{Funktionen}
+\section{Definition einer Funktion}
+Die Definition erfolgt durch eine Deklaration inklusive
+der Zahlbereichen und des Zahlbereiches des "Rückgabewertes" der Funktion:
+
+\[ f : \mathbb{R} \rightarrow \mathbb{R}\]
+\[ f(x) = \frac{3}{7} + a^2 - \frac{b}{3x} + 2; \quad\quad x \in \mathbb{Z}\backslash\{0\}\]
+
+\section{Lineare Funktion}
+\subsection{Typische Definition}
+\[f(x) = y = k \cdot x + d; \quad\quad k, d \in \mathbb{R}\]
+\subsection{Lösungsformel}
+\[x = \frac{-d}{k}\]
+
+\subsection{Beispiel}
+\[f(x) = -\frac{3}{2}x + 6\]
+
+\subsection{Wertetabelle} der Funktion $f(x)$ wobei $x \in [-3; 7]$\\\\
+\begin{tabular}{l||c|c|c|c|c|c|c|c|c|c|c}
+$x$ & -3 & -2 & -1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+\hline
+$f(x)$ & 10.5 & 9 & 7.5 & 6 & 4.5 & 3 & 1.5 & 0 & -1.5 & -3 & -4.5\\
+\end{tabular}\\\\\\
+\textbf{Beachte:} $\Delta x$ ist konstant $-1.5$.\\
+
+\subsection{Steigung}
+\[f(x) = k\cdot x + d; \quad\quad k,d \in \mathbb{R}\]
+$d$ ist der y-Achsenabschnitt. An diesem Ort wird die y-Achse\\
+geschnitten. $k$ ist die Steigung von f.\\\\\\
+\begin{tabular}{ll}
+Wenn $k \geq 0$: & f ist wachsend\\
+Wenn $k < 0$: & f ist fallend\\
+\end{tabular}
+
+\subsection{Stufenformel}
+Herleitung der Stufenformel:
+\[f(x+1) = f(x) + k\]
+\[f(x+1) - f(x) = k\]
+\[f(x+\Delta x) = f(x) + \Delta x \cdot k\]
+\[f(x+\Delta x) - f(x) = \Delta x \cdot k\]
+\[f(x+\Delta x) - f(x) = k\]
+
+\begin{center}
+\fbox{\parbox{4cm}{\[\frac{\Delta y}{\Delta x} = k\]}}
+\end{center}
+
+
+\subsubsection{Deutung der Steigung k}
+Die Steigung einer linearen Funktion entspricht der Änderung\\
+der Funktionswerte, bei Vermehrung des Arguments um 1.
+
+\section{Quadratische Funktion}
+\subsection{Typische Definition}
+\[f(x) = y = ax^2 + bx + c; \quad\quad a \in \mathbb{R}\backslash\{0\}; \;\; b, c \in \mathbb{R}\]
+\subsection{Lösungsformel}
+\[x_1 / x_2 = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+\subsection{Beispiel}
+\[f(x) = \frac{1}{2}x^2 - \frac{3}{4}x - \frac{7}{2}\]
+
+\subsection{Wertetabelle} der Funktion $f(x)$ wobei $x \in [-3; 7]$\\\\
+\begin{tabular}{l||c|c|c|c|c|c|c|c|c|c|c}
+$x$ & -3 & -2 & -1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
+\hline
+$f(x)$ & 3.25 & 0 & -2.25 & -3.5 & -3.75 & -3 & -1.25 & 1.5 & 5.25 & 10 & 15.75\\
+\end{tabular}\\\\\\
+\textbf{Beachte:} $\Delta x$ ist nicht konstant!\\
 
 
 \chapter{Quadratische Gleichungen}
@@ -31,7 +97,7 @@
 
 
 \chapter{Logik}
-\section{Aussagen}'
+\section{Aussagen}
 \section{Logikoperatoren}
 
 \chapter{Beweise}
