@@ -1,15 +1,17 @@
-\documentclass[12pt,a4paper,oneside]{scrbook}
+\documentclass[12pt,a4paper]{scrbook}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage[bottom]{footmisc}
 \usepackage[hidelinks]{hyperref}
 \author{\{Autoren hier vllt. einfügen\}}
 \title{Mathematik 1. Kantonsschule}
-\begin{document}
 
+\begin{document}
+\shorthandoff{"}
 
 \maketitle
 \tableofcontents
@@ -91,6 +93,7 @@ $f(x)$ & 3.25 & 0 & -2.25 & -3.5 & -3.75 & -3 & -1.25 & 1.5 & 5.25 & 10 & 15.75\
 
 
 \chapter{Quadratische Gleichungen}
+\label{quadratische_gleichungen}
 
 
 \chapter{Lineare Gleichungssysteme}
@@ -124,33 +127,40 @@ negative Zahlen ($\mathbb{Z}^-$). Es kamen die rationalen Zahlen hinzu.
 (z. Bsp. $\frac{1}{4} = 0.25 \in \mathbb{Q}$). Um alle möglichen Werte auf
 der Zahlengerade bestimmen zu können (z. Bsp. $\sqrt{2} \in \mathbb{R}$)
 beschrieb man die reellen Zahlen. Etwas später endeckte man, dass
-gewisse Probleme nicht mehr in den reellen Zahlen lösbar sind. Beispiele:
+gewisse Probleme nicht mehr in den reellen Zahlen lösbar sind.
+Zum Beispiel einige quadratisch Gleichungen\footnote{Wie man quadratische Gleichungen lösen kann,
+erfährt man auf Seite \pageref{quadratische_gleichungen}}
 \begin{eqnarray*}
-x^2+4 & = 0\\
-x^2+4x+13 & = 0\\
-x^2+1 & = 0
+x^2+4 & = ~ 0\\
+x^2+4x+13 & = ~ 0\\
+x^2+1 & = ~ 0
 \end{eqnarray*}
 Deshalb wurden die komplexen Zahlen ($\mathbb{C}$) beschrieben. Die komplexen
 Zahlen sind eine "Übermenge" der reellen Zahlen. Es gilt also:
-\[\mathbb{N} ~ \subseteq ~ \mathbb{Z} ~ \subseteq ~ \mathbb{Q} ~ \subseteq ~ \mathbb{R} ~ \subseteq ~ \mathbb{C}\]
+\[\mathbb{N} ~ \subset ~ \mathbb{Z} ~ \subset ~ \mathbb{Q} ~ \subset ~ \mathbb{R} ~ \subset ~ \mathbb{C}\]
 
 \section{Kartesische Darstellung}
 Da wir auf unserem eindimensionalen Zahlenstrahl bereits alle Werte
 beschreiben können, erweiteren wir den Strahl auf eine zweidimensionale
-Ebene. Die x-Achse wird als die "reelle Achse" bezeichnet, wohin gehen,
+Ebene. Die x-Achse wird als die "reelle Achse" bezeichnet, wohingegen,
 die neue hinzugekommene y-Achse "imaginäre Achse" genannt wird.\\
-\begin{figure}[t]
-  \includegraphics[scale=2]{img/komplexe_zahlen.pdf}\\
-  \caption{Eine reelle und eine komplexe Zahl in der kartesischen Darstellung}
-\end{figure}
+\includegraphics[scale=2]{img/komplexe_zahlen.pdf}\\
+Das Problem der reellen Zahlen besteht darin, dass Wurzeln mit negativen
+Radikanden unmöglich zu berechnen sind.
 
 \section{Polardarstellung}
 
+
 \section{Rechenoperationen}
+
 \subsection{Addition}
+
 \subsection{Subtraktion}
+
 \subsection{Multiplikation}
+
 \subsection{Division}
+
 \subsection{Potenzen}
 
 \section{Quadratische Gleichungen}
