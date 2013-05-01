@@ -16,8 +16,11 @@
 
 \maketitle
 \tableofcontents
-
 \newpage
+\section*{Vorwort}
+Dieses Buch enstand als Zusammenfassung der ganzen Mathematik Theorie in der 1. Kantonsschule.
+Dabei wurden die Themen aus dem Grundlagenfach, wie auch die Themen aus dem Akzentfach
+aufgenommen.
 
 \chapter{Potenzgesetze}
 
@@ -115,6 +118,7 @@ $f(x)$ & 3.25 & 0 & -2.25 & -3.5 & -3.75 & -3 & -1.25 & 1.5 & 5.25 & 10 & 15.75\
 \section{Induktive Beweise}
 
 \chapter{Darstellende Geometrie}
+<<<<<<< Updated upstream
 \section{Einführung}
 \textbf{Grundproblem:} räumliche Figur $\Leftrightarrow$ ebene Zeichnung \\\\
 Die Darstellende Geometrie schafft Grundlagen für die zeichnerische, ebene Darstellung räumlicher Objekte
@@ -139,20 +143,22 @@ folgenden Abbildungsverfahren gebräuchlich:
 
 $a_{xy} = 135^{\circ}$
 
+
 \section{Zweitafeldarstellung}
 \section{Dreitafeldarstellung}
+
 
 \chapter{Komplexe Zahlen}
 \section{Grundlagen}
 Während unserem ganzen Leben erweiteren wir unsere Zahlbereiche. Zuerst
-reichten unsere natürlichen Zahlen von 0-10. Irgendwann kamen die Zahlen,
+reichten unsere natürlichen Zahlen von 0 bis 10. Irgendwann kamen die Zahlen,
 die grösser als 10 sind dazu ($\mathbb{N}$). Später entdeckten wir
 negative Zahlen ($\mathbb{Z}^-$). Es kamen die rationalen Zahlen hinzu.
 (z. Bsp. $\frac{1}{4} = 0.25 \in \mathbb{Q}$). Um alle möglichen Werte auf
 der Zahlengerade bestimmen zu können (z. Bsp. $\sqrt{2} \in \mathbb{R}$)
 beschrieb man die reellen Zahlen. Etwas später endeckte man, dass
 gewisse Probleme nicht mehr in den reellen Zahlen lösbar sind.
-Zum Beispiel einige quadratisch Gleichungen\footnote{Wie man quadratische Gleichungen lösen kann,
+Zum Beispiel einige quadratische Gleichungen:\footnote{Wie man quadratische Gleichungen lösen kann,
 erfährt man auf Seite \pageref{quadratische_gleichungen}}
 \begin{eqnarray*}
 x^2+4 & = ~ 0\\
@@ -162,6 +168,21 @@ x^2+1 & = ~ 0
 Deshalb wurden die komplexen Zahlen ($\mathbb{C}$) beschrieben. Die komplexen
 Zahlen sind eine "Übermenge" der reellen Zahlen. Es gilt also:
 \[\mathbb{N} ~ \subset ~ \mathbb{Z} ~ \subset ~ \mathbb{Q} ~ \subset ~ \mathbb{R} ~ \subset ~ \mathbb{C}\]
+Das Problem in reellen Zahlen besteht darin, dass Wurzeln mit negativen
+Radikanden unmöglich zu berechnen sind.
+\[\sqrt{-100} ~~ (Existiert~in~\mathbb{R}~nicht)\]
+Quadriert man jedoch eine negative Zahl, ist das Resultat stets positiv.\\
+Da in den reellen Zahlen können alle Zahlen innerhalb eines Intervalles (z. Bsp.
+$]3, 5]$) genannt werden. Um also Lösungen erhalten zu können, die nicht auf
+einer eindimensionalen Strecke liegen, machen wir den Zahlenbereich zweidimensional.
+Zahlen haben nun also 2 Koordinaten. Dies kann wie folgt geschrieben werden:
+\[(4, 3i) = 4 + 3i\]
+Das $i$ stellt die imaginäre Einheit dar, wobei gilt, dass:
+\begin{center}
+\fbox{\parbox{4cm}{\[i^2 = -1\]}}
+\end{center}
+Da die komplexen Zahlen aus einem Real- und einem Imaginärteil bestehen, ist es aucht nicht mehr möglich,
+diese in Relationen zu einander zu setzen. ($<, \leq, ...$)
 
 \section{Kartesische Darstellung}
 Da wir auf unserem eindimensionalen Zahlenstrahl bereits alle Werte
@@ -169,10 +190,18 @@ beschreiben können, erweiteren wir den Strahl auf eine zweidimensionale
 Ebene. Die x-Achse wird als die "reelle Achse" bezeichnet, wohingegen,
 die neue hinzugekommene y-Achse "imaginäre Achse" genannt wird.\\
 \includegraphics[scale=2]{img/komplexe_zahlen.pdf}\\
-Das Problem der reellen Zahlen besteht darin, dass Wurzeln mit negativen
-Radikanden unmöglich zu berechnen sind.
+
 
 \section{Polardarstellung}
+In der Polardarstellung wird die Zahl nicht durch Koordinaten auf der x- und der y-Achse angegeben, sondern
+durch den Abstand vom Nullpunkt\footnote{Siehe auch die Betragsfunktion: Seite \pageref{komplex_betrag}}
+\[\vert z \vert = r = \sqrt{Re(z)^2 + Im(z)^2} \]
+und den Öffnungswinkel $\phi$. Für die Polardarstellung haben sich folgende Schreibweisen eingebürgert:
+\[(\sqrt{2}, 45^{\circ}) = \sqrt{2} ~~ cis ~~ 45^{\circ} = 1 + i\]
+Das $cis$ steht hierbei für $\cos$, $i$ und $\sin$, die trigonometrischen Funktionen, die bei der
+Berechnung mit Polarkoordinaten gebraucht werden. Auf diese Berechnungen wird hier nicht
+weiter eingegangen.\\
+\includegraphics[scale=1.5]{img/komplexe_zahlen_polar.pdf}\\
 
 
 \section{Rechenoperationen}
@@ -186,6 +215,9 @@ Radikanden unmöglich zu berechnen sind.
 \subsection{Division}
 
 \subsection{Potenzen}
+
+\subsection{Betrag}
+\label{komplex_betrag}
 
 \section{Quadratische Gleichungen}
 
