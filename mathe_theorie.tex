@@ -181,7 +181,8 @@ Quadriert man jedoch eine negative Zahl, ist das Resultat stets positiv.\\
 Da in den reellen Zahlen können alle Zahlen innerhalb eines Intervalles (z. Bsp.
 $]3, 5]$) genannt werden. Um also Lösungen erhalten zu können, die nicht auf
 einer eindimensionalen Strecke liegen, machen wir den Zahlenbereich zweidimensional.
-Zahlen haben nun also 2 Koordinaten. Dies kann wie folgt geschrieben werden:
+Zahlen haben nun also 2 Koordinaten. Dies kann wie folgt geschrieben werden, wobei
+letztere Schreibweise gebräuchlicher ist:
 \[(4, 3i) = 4 + 3i\]
 Das $i$ stellt die imaginäre Einheit dar, wobei gilt, dass:
 \begin{center}
@@ -190,42 +191,77 @@ Das $i$ stellt die imaginäre Einheit dar, wobei gilt, dass:
 Da die komplexen Zahlen aus einem Real- und einem Imaginärteil bestehen, ist es aucht nicht mehr möglich,
 diese in Relationen zu einander zu setzen. ($<, \leq, ...$)
 
+\section{Konjugiert komplexer Wert}
+Der konjugiert komplexe Wert einer komplexen Zahl entspricht der Zahl selbst,
+mit der Ausnahme, dass das Vorzeichen des imaginären Wertes geändert wurde. Formell:
+\[\overline{(a+bi)} = \left\lbrace \begin{array}{ll} (a-bi), & wenn~b > 0\\ (a+bi), & sonst \end{array} \right.\]
+Ein konkretes Beispiel:
+\[\overline{(4+3i)} = (4-3i)\]
+
 \section{Kartesische Darstellung}
 Da wir auf unserem eindimensionalen Zahlenstrahl bereits alle Werte
-beschreiben können, erweiteren wir den Strahl auf eine zweidimensionale
+beschreiben können, erweitern wir den Strahl auf eine zweidimensionale
 Ebene. Die x-Achse wird als die "reelle Achse" bezeichnet, wohingegen,
 die neue hinzugekommene y-Achse "imaginäre Achse" genannt wird.\\
-\includegraphics[scale=2]{img/komplexe_zahlen.pdf}\\
-
+\includegraphics[scale=1.9]{img/komplexe_zahlen.pdf}
 
 \section{Polardarstellung}
 In der Polardarstellung wird die Zahl nicht durch Koordinaten auf der x- und der y-Achse angegeben, sondern
 durch den Abstand vom Nullpunkt\footnote{Siehe auch die Betragsfunktion: Seite \pageref{komplex_betrag}}
-\[\vert z \vert = r = \sqrt{Re(z)^2 + Im(z)^2} \]
+\[r = \vert z \vert = \sqrt{Re(z)^2 + Im(z)^2} \]
 und den Öffnungswinkel $\phi$. Für die Polardarstellung haben sich folgende Schreibweisen eingebürgert:
 \[(\sqrt{2}, 45^{\circ}) = \sqrt{2} ~~ cis ~~ 45^{\circ} = 1 + i\]
-Das $cis$ steht hierbei für $\cos$, $i$ und $\sin$, die trigonometrischen Funktionen, die bei der
-Berechnung mit Polarkoordinaten gebraucht werden. Auf diese Berechnungen wird hier nicht
-weiter eingegangen.\\
+Das $cis$ steht hierbei für $\cos$, $i$ und $\sin$, die trigonometrischen Funktionen, die bei der Berechnung mit Polarkoordinaten gebraucht werden. Auf diese Berechnungen wird hier nicht weiter eingegangen.\\
 \includegraphics[scale=1.5]{img/komplexe_zahlen_polar.pdf}\\
 
-
 \section{Rechenoperationen}
-
+Bei den Grundrechenarten könnte man $i$ als Formvariable betrachten, mit der ganz normal gerechnet wird, wobei zu beachten ist, dass ein $i^2$ durch ein $-1$ zu
+ersetzen ist.
 \subsection{Addition}
+Die Addition zweier komplexer Zahlen gestaltet sich ganz einfach.
+Es müssen nur jeweils die Realteile und die Imaginärteile zusammengezählt werden. Beispiel:
+\[(4+3i) + (2+2i) = (6+5i)\]
 
 \subsection{Subtraktion}
+Die Subtraktion erfolgt analog zur Addition:
+\[(2+2i) - (4+3i) = (-2-1i)\]
 
 \subsection{Multiplikation}
+Auch bei der Multiplikation, wird ganz normal jeder Summand mit jedem multipliziert.
+Wichtig zu wissen ist hier, dass $i^2 = -1$ definiert wurde.
+\begin{equation*}
+\begin{split}
+(4+3i) \cdot (2+2i) & = 8 + 8i + 6i + 6i^2 \\
+ & = 8 + 14i + 6(-1)\\
+ & = 2 + 14i
+\end{split}
+\end{equation*}
 
 \subsection{Division}
-
-\subsection{Potenzen}
+Bei der Division (vereinfacht meist als Bruch), müssen Zähler und Nenner mit
+dem konjugiert komplexen Wert des Nenners erweitert werden:
+\[\frac{z_1}{z_2} = \frac{z_1 \cdot \overline{z_2}}{z_2 \cdot \overline{z_2}}\]
+Dies ist notwendig, um ein $i^2$ zu generieren und somit die Imaginärteile aus dem
+Nenner kürzen. Im Nenner ergibt sich dadurch ein Binom. Beispiel:
+\[
+\frac{(4+3i)}{(2+2i)} ~ = ~ \frac{(4+3i)(2-2i)}{(2+2i)(2-2i)}
+~ = ~ \frac{8-2i-6i^2}{4-4i^2} ~ = ~ \frac{14-2i}{8} ~ = ~ \frac{7}{4} - \frac{1}{4}i
+\]
 
 \subsection{Betrag}
 \label{komplex_betrag}
+Der Betrag einer komplexen Zahl entspricht dem Abstand zum Nullpunkt auf der
+Gaussschen Ebene.
+\[r = \vert z \vert = \sqrt{Re(z)^2 + Im(z)^2} \]
 
 \section{Quadratische Gleichungen}
+Quadratische Gleichungen mit komplexen Lösungen lösen sich mit derselben
+Lösungsformel wie quadratische Gleichungen mit reellen Lösungen.\footnote{Siehe Seite \pageref{quadratische_gleichungen}}
+\[z^2 + 4z + 5 = 0\]
+\[\Rightarrow z_{1/2} = \frac{-4 \pm \sqrt{16-20}}{2} \]
+Reelle Lösungen lassen sich durch die Diskriminate ausschliessen:
+\[16-20 < 0 ~ \Longrightarrow ~ \sqrt{-4} = 2i\]
+\[\frac{-4 \pm 2i}{2} = -2 \pm i\]
 
 \section{Lineare Gleichungssysteme}
 
