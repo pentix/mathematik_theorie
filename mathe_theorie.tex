@@ -15,12 +15,20 @@
 \shorthandoff{"}
 
 \maketitle
-\tableofcontents
-\newpage
 \section*{Vorwort}
 Dieses Buch enstand als Zusammenfassung der ganzen Mathematik Theorie in der 1. Kantonsschule.
 Dabei wurden die Themen aus dem Grundlagenfach, wie auch die Themen aus dem Akzentfach
 aufgenommen.
+
+\makeatletter
+\renewcommand*\cleardoublepage{\clearpage\if@twoside
+  \ifodd\c@page \hbox{}\newpage\if@twocolumn\hbox{}%
+  \newpage\fi\fi\fi}
+\makeatother
+
+\tableofcontents
+\newpage
+
 
 \chapter{Potenzgesetze}
 
@@ -178,7 +186,7 @@ Das Problem in reellen Zahlen besteht darin, dass Wurzeln mit negativen
 Radikanden unmöglich zu berechnen sind.
 \[\sqrt{-100} ~~ (Existiert~in~\mathbb{R}~nicht)\]
 Quadriert man jedoch eine negative Zahl, ist das Resultat stets positiv.\\
-Da in den reellen Zahlen können alle Zahlen innerhalb eines Intervalles (z. Bsp.
+In den reellen Zahlen können alle Zahlen innerhalb eines Intervalles (z. Bsp.
 $]3, 5]$) genannt werden. Um also Lösungen erhalten zu können, die nicht auf
 einer eindimensionalen Strecke liegen, machen wir den Zahlenbereich zweidimensional.
 Zahlen haben nun also 2 Koordinaten. Dies kann wie folgt geschrieben werden, wobei
