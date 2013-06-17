@@ -5,6 +5,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{relsize}
 \usepackage[bottom]{footmisc}
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
@@ -110,6 +111,7 @@ $f(x)$ & 3.25 & 0 & -2.25 & -3.5 & -3.75 & -3 & -1.25 & 1.5 & 5.25 & 10 & 15.75\
 
 \chapter{Lineare Gleichungssysteme}
 
+\chapter{Trigonometrie}
 
 \chapter{Logik}
 \section{Aussagen}
@@ -204,7 +206,7 @@ Das $i$ stellt die imaginäre Einheit dar, wobei gilt, dass:
 \begin{center}
 \fbox{\parbox{4cm}{\[i^2 = -1\]}}
 \end{center}
-Da die komplexen Zahlen aus einem Real- und einem Imaginärteil bestehen, ist es aucht nicht mehr möglich,
+Da die komplexen Zahlen aus einem Real- und einem Imaginärteil bestehen, ist es auch nicht mehr möglich,
 diese in Relationen zu einander zu setzen. ($<, \leq, ...$)
 
 \section{Konjugiert komplexer Wert}
@@ -308,5 +310,30 @@ Körpergrösse & 150cm, 160cm, 170cm, ...
 
 \section{Die Urliste}
 In der Urliste befinden sich die Rohdaten, also noch nicht ausgewertet, aber chronologisch, nach Eingabe der Daten geordnet.
+
+\section{Visualisierungen}
+\subsection{Säulendiagramm}
+\subsection{Histogramm}
+\subsection{Kreisdiagramm}
+\subsection{Boxplot}
+
+\section{Spezielle Werte}
+\subsection{Das arithmetische Mittel}
+\subsection{Der Median}
+\subsection{Quartile}
+Interquartilsabstand
+
+\subsection{Der Modus}
+\subsection{Empirische Varianz}
+\[ s^2 = \sigma^2_x = \frac{(x_1-\overline{x})^2 + (x_2-\overline{x})^2 + ... + (x_n-\overline{x})^2}{n} = \sum_{i=1}^n \frac{(x_i-\overline{x})^2}{n} = \frac{1}{n}\sum_{i=1}^n (x_i-\overline{x})^2\]
+
+\subsection{Standardabweichung}
+\[ s_x = \sigma_x = \sqrt{\sigma^2_x} = \sqrt{\frac{1}{n} \sum_{i=1}^n (x_i-\overline{x})^2} \]
+
+\subsection{Empirische Kovarianz}
+\[ s_{xy} = \sigma_{xy} = \frac{1}{n} \sum_{i=1}^n (x_i - \overline{x})(y_i - \overline{y}) = \frac{1}{n} \sum_{i=1}^n x_i \cdot y_i \; - \overline{x} \cdot \overline{y} \]
+
+\section{Lineare Regression}
+\[ k = \frac{\sigma_{xy}}{\sigma^2_x} \quad \quad und \quad \quad d = \overline{y} - k \cdot \overline{x} \]
 
 \end{document}
