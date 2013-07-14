@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+%~ \usepackage[left=2.5cm,right=2cm,top=3cm,bottom=2cm]{geometry}
 \usepackage{graphicx}
 \usepackage{relsize}
 \usepackage[bottom]{footmisc}
@@ -335,6 +336,22 @@ Interquartilsabstand
 
 \section{Lineare Regression}
 \[ k = \frac{\sigma_{xy}}{\sigma^2_x} \quad \quad und \quad \quad d = \overline{y} - k \cdot \overline{x} \]
+
+\section{Exkurs: Quadratische Regression}
+\[ f(x) = ax^2 + bx + c \]
+wobei
+\[ a = \frac{\left(\overline{x^2y} - \overline{x^2} \cdot \overline{y}\right) \cdot \left( \overline{x^2} - \left(\overline{x}\right)^2 \right) - \left(\overline{xy} - \overline{x} \cdot \overline{y}\right) \cdot \left(\overline{x^3} - \overline{x^2} \cdot \overline{x}\right)}{\left(\overline{x^4} - \left(\overline{x^2}\right)^2 \right) \cdot \left( \overline{x^2} - \left(\overline{x}\right)^2 \right) - \left(\overline{x^3} - \overline{x^2} \cdot \overline{x}\right)} \]
+\\
+\[ b = \frac{\overline{xy} - \overline{x} \cdot \overline{y} - a \cdot \left( \overline{x^3} - \overline{x^2} \cdot \overline{x} \right)}{\overline{x^2} - \left(\overline{x} \right)^2} \]
+\\
+\[ c = \overline{y} - a \cdot {x^2} - b \cdot \overline{x} \]
+\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{img/quad_regression.pdf}
+	\caption{Eine quadratische Regression mit 7 verschiedenen Punkten}
+\end{figure}
 
 \section{Korrelationskoeffizient}
 \[ r_{xy} = \frac{\sigma_{xy}}{\sigma_x \cdot \sigma_y} = \frac{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} x_i \cdot y_i ~ - \overline{x}\cdot\overline{y}}{\sqrt{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} (x_i-\overline{x})^2} \cdot \sqrt{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} (y_i-\overline{y})^2}} \]
