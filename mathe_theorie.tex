@@ -10,15 +10,15 @@
 \usepackage[bottom]{footmisc}
 \usepackage[hidelinks]{hyperref}
 \usepackage{color}
-\author{\{Autoren hier vllt. einfügen\}}
-\title{Mathematik 1. Kantonsschule}
+\author{Patrick Eigensatz\\Gabriel Gavrilas}
+\title{Mathematik in der Kantonsschule}
 
 \begin{document}
 \shorthandoff{"}
 
 \maketitle
 \section*{Vorwort}
-Dieses Buch enstand als Zusammenfassung der ganzen Mathematik Theorie in der 1. Kantonsschule.
+Dieses Buch enstand als Zusammenfassung der ganzen Mathematik Theorie in der Kantonsschule.
 Dabei wurden die Themen aus dem Grundlagenfach, wie auch die Themen aus dem Akzentfach
 aufgenommen.
 
@@ -31,6 +31,7 @@ aufgenommen.
 \tableofcontents
 \newpage
 
+\part{1. Kantonsschule}
 
 \chapter{Potenzgesetze}
 
@@ -355,5 +356,65 @@ wobei
 
 \section{Korrelationskoeffizient}
 \[ r_{xy} = \frac{\sigma_{xy}}{\sigma_x \cdot \sigma_y} = \frac{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} x_i \cdot y_i ~ - \overline{x}\cdot\overline{y}}{\sqrt{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} (x_i-\overline{x})^2} \cdot \sqrt{\mathlarger{\frac{1}{n}} \mathlarger{\sum_{i=1}^n} (y_i-\overline{y})^2}} \]
+
+\part{2. Kantonsschule}
+\chapter{Analytische Geometrie}
+
+\section{Pfeile}
+\subsection{Ortspfeile}
+\section{Vektoren}
+Vektoren sind die Menge aller Pfeile, die mit derselben Kraft in die selbe Richtung zeigen.
+
+\[ \vec{a} = \left(\begin{array}{l}2\\3\end{array}\right) \]
+
+\subsection{Vektoraddition}
+Bei der Vektoraddition werden die beiden x-Komponenten, sowie die beiden y-Komponenten miteinander addiert.
+\[ \left(\begin{array}{c}1\\3\end{array}\right) + \left(\begin{array}{c}2\\4\end{array}\right) = \left(\begin{array}{c}3\\7\end{array}\right) \]
+
+\subsection{Vektorsubtraktion}
+Die Vektorsubtraktion erfolgt analog zur Vektoraddition.
+\[ \left(\begin{array}{c}3\\7\end{array}\right) - \left(\begin{array}{c}1\\3\end{array}\right) = \left(\begin{array}{c}2\\4\end{array}\right) \]
+
+\subsection{Skalarmultiplikation}
+Die Multiplikation zweier Vektoren ergibt ein Skalar.
+\[ \left(\begin{array}{c}1\\3\end{array}\right) \cdot \left(\begin{array}{c}2\\4\end{array}\right) = 1 \cdot 2 + 3 \cdot 4 =  14\]
+
+\subsection{Länge eines Vektores}
+Der Betrag des Vektors entspricht der Länge des Vektors auf der Ebene.
+\[ \left\vert\left(\begin{array}{c}1\\3\end{array}\right)\right\vert = \sqrt{1^2 + 3^2} = \sqrt{10}\]
+
+\subsection{Berechnungen in der Geometrie}
+Berechne den fehlenden Punkt $D$ des Parallelogrammes.
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=2]{img/vektor_parallelogramm.pdf}
+	\caption{Ein Parallelogramm, dessen Punkt $D$ über den Vektor $AB$  berechnet werden kann}
+\end{figure}\\
+Zuerst muss der Vektor $\overrightarrow{AB}$ umgekehrt werden, das heisst, x- und y-Komponente wechseln das Vorzeichen.
+\[ \vec{a} = \left(\begin{array}{c} 3\\ 3 \end{array}\right); \quad\quad  -\vec{a} = \left(\begin{array}{c} -3\\ -3 \end{array}\right)\]
+Nun addiert man den Vektor $-\vec{a}$ zum Ortspfeil $\vec{C}$, dann erhält man den Ortspfeil $\vec{D}$.
+\[ \left(\begin{array}{c}4\\4\end{array}\right) + \left(\begin{array}{c}-3\\-3\end{array}\right) = \left(\begin{array}{c}1\\1\end{array}\right) \]
+Folglich ist der Punkt $D = (1 \vert 1)$.
+
+\subsection{Kippregeln}
+Vektoren lassen sich nach links oder rechts um $90^{\circ}$ kippen.
+Die gekippten Vektoren berechnen sich wie folgt:
+\[ \vec{a} = \left(\begin{array}{c} 5\\ 2 \end{array}\right); \quad\quad \vec{a}_l = \left(\begin{array}{c} -2\\ 5 \end{array}\right); \quad\quad \vec{a}_r = \left(\begin{array}{c} 2\\ -5 \end{array}\right); \]
+\begin{figure}
+\centering
+\includegraphics[scale=1]{img/vektor_kippen.pdf}
+\caption{Gekippte Vektoren}
+\end{figure}
+
+\subsection{Orthogonalitätskriterium}
+Zwei Vektoren gelten als zueinander orthogonal, wenn ihr skalares Produkt 0 ist.
+\[ \vec{a} \perp \vec{b} \Longleftrightarrow \vec{a} \cdot \vec{b} = 0 \]
+
+\subsection{VP Formel}
+
+\subsection{VW Formel}
+
+\part{Anhang}
+\listoffigures
 
 \end{document}
