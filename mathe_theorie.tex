@@ -396,6 +396,10 @@ Nun addiert man den Vektor $-\vec{a}$ zum Ortspfeil $\vec{C}$, dann erhält man 
 \[ \left(\begin{array}{c}4\\4\end{array}\right) + \left(\begin{array}{c}-3\\-3\end{array}\right) = \left(\begin{array}{c}1\\1\end{array}\right) \]
 Folglich ist der Punkt $D = (1 \vert 1)$.
 
+\subsection{Einheitsvektor}
+Der Einheitsvektor $\vec{a}_0$ eines Vektors $\vec{a}$ stellt ein parallelen Vektor mit der Länge $\vert \vec{a}_0 \vert = 1$ dar.
+Er ist somit $\vec{a}_0 = \frac{\vec{a}}{\vert \vec{a} \vert}$.
+
 \subsection{Kippregeln}
 Vektoren lassen sich nach links oder rechts um $90^{\circ}$ kippen.
 Die gekippten Vektoren berechnen sich wie folgt:
@@ -410,9 +414,19 @@ Die gekippten Vektoren berechnen sich wie folgt:
 Zwei Vektoren gelten als zueinander orthogonal, wenn ihr skalares Produkt 0 ist.
 \[ \vec{a} \perp \vec{b} \Longleftrightarrow \vec{a} \cdot \vec{b} = 0 \]
 
-\subsection{VP Formel}
+\subsection{Vektor-Projektions Formel}
+Mit der Vektor-Projektionsformel wird der Vektor $\vec{b}_a$ gebildet vom Punkt, wo sich beide Vektoren
+schneiden, bis zu dem Punkt auf dem der Orthogonalvektor von $\vec{a}$ bis zur Spitze von $\vec{b}$ geht. 
+\begin{alignat}{3}
+\vec{b}_a & = & \frac{\vec{b} \cdot \vec{a}}{\vert \vec{a} \vert} \cdot \frac{\vec{a}}{\vert \vec{a} \vert}\nonumber \\\nonumber\\
+ & = & (\vec{b} \cdot \vec{a}_0) \cdot \vec{a} \nonumber 
+\end{alignat}
 
-\subsection{VW Formel}
+\subsection{Vektor-Winkel Formel}
+Mit der Vektor-Winkel-Formel berechnet man den von 2 Vektoren eingeschlossenen Winkel:
+\[ \cos(\sphericalangle(\vec{a}, \vec{b})) = \frac{\vec{a} \cdot \vec{b}}{\vert \vec{a} \vert \, \vert \vec{b} \vert} \Longrightarrow \sphericalangle(\vec{a}, \vec{b}) = \arccos\left(\frac{\vec{a} \cdot \vec{b}}{\vert \vec{a} \vert \, \vert \vec{b} \vert} \right) \] 
+
+
 
 \part{Anhang}
 \listoffigures
