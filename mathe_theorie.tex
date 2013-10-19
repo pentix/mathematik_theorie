@@ -427,6 +427,46 @@ Mit der Vektor-Winkel-Formel berechnet man den von 2 Vektoren eingeschlossenen W
 \[ \cos(\sphericalangle(\vec{a}, \vec{b})) = \frac{\vec{a} \cdot \vec{b}}{\vert \vec{a} \vert \, \vert \vec{b} \vert} \Longrightarrow \sphericalangle(\vec{a}, \vec{b}) = \arccos\left(\frac{\vec{a} \cdot \vec{b}}{\vert \vec{a} \vert \, \vert \vec{b} \vert} \right) \] 
 
 
+\subsection{Parameterdarstellung von Geraden}
+Geraden lassen sich ebenfalls durch Vektoren darstellen. Dies durch die simple Form:
+\[ g \in \{X + s \cdot \vec{v}, ~~~~ s \in \mathbb{R}\} \]
+$X$ kennzeichnet hierbei einen beliebigen Aufsprungspunkt, der sich auf der Gerade befindet. $s$ ist der Parameter,
+der alle möglichen Vielfachen des Vektors $\vec{v}$ darstellt und somit die Gerade bildet.
+
+\subsubsection{Beispiele für geometrische Aufgaben}
+\[ g \in \{X \in \mathbb{R}^2 \, \vert \, X = (-2 \vert 6) + s \cdot (3 \vert 1)\} \]
+\[ h \in \{X \in \mathbb{R}^2 \, \vert \, X = (-6 \vert 8) + s \cdot (1 \vert -3)\} \]\\
+
+$A, B, C$ seien Eckpunkte eines gleichschenkligen Dreiecks.\\
+Es gilt:\\
+\[ \overline{AC} = \overline{BC} \]
+\[ g \cap h = \{C\} \]
+\[ A \in g, ~~ B \in h \]
+\[ \overline{AC} = 5 \sqrt{10} \]\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=1.2]{img/parameter_geometrie.pdf}\\
+\end{figure}
+
+Schnittpunkt C:\\
+\[ \left(\begin{array}{c}-2\\6\end{array}\right) + s \cdot \left(\begin{array}{c}3\\1\end{array}\right) = \left(\begin{array}{c}-6\\8\end{array}\right) + t \cdot \left(\begin{array}{c}1\\3\end{array}\right)\]\\
+\\
+Wir erhalten das lineare Gleichungssystem:
+\begin{alignat}{3}
+\text{I :  } & 23x+25y+12 & = & 16x + 14z \nonumber \\
+\text{II:  } & 17y+25z & = & -11x + 2z - 21 \nonumber
+\end{alignat}
+Lösen wir dieses erhalten wir $s=-1$ und $t=1$. Daraus folgt: $C = (-5 \vert 5)$
+
+\begin{alignat}{3}
+A & = \pm 5 \sqrt{10} \cdot \vec{g}_0 + C \nonumber\\ \nonumber\\
+  & = \pm 5 \sqrt{10} \cdot \frac{1}{\sqrt{10}} \cdot \left(\begin{array}{c}3\\1\end{array}\right) + C \nonumber \\ \nonumber\\
+  & = \left\{(10 \vert 10), (20 \vert 0) \right\} \nonumber \nonumber\\ \nonumber\\ \nonumber\\
+B & = C \pm 5 \sqrt{10} \cdot \vec{h}_0 = C \pm 5 \cdot \left(\begin{array}{c}1\\-3\end{array}\right) \nonumber\\ \nonumber\\
+  & = \left\{ (0 \vert 10), (-10 \vert 20) \right\} \nonumber
+\end{alignat}
+
 
 \part{Anhang}
 \listoffigures
